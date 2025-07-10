@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Rimuove .php dall'URL
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+Options -Indexes
+
+<FilesMatch "^\.ht">
+    Require all denied
+</FilesMatch>

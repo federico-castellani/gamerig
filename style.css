@@ -1,0 +1,2652 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #1B1B1B;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+header form {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0 1em 0;
+    width: 100%;
+    background-color: #1B1B1B;
+}
+
+header form a {
+    text-decoration: none;
+}
+
+.titoloTopVisibile {
+    display: block;
+}
+
+.titoloTopInvisibile {
+    display: none;
+}
+
+.ricercaBarraLunga {
+    width: 90%;
+}
+
+.ricercaBarraCorta {
+    width: 85%;
+}
+
+.header form h1 {
+    font-size: 2em;
+    color: #FF003C;
+    flex: 0 0 10%;
+    margin: 0em 0em 0em 0.25em;
+    padding: 0;
+} 
+
+header form input[type="text"] {
+    flex: 1; /*ridimensionabile*/
+    border: 0.01em solid #FF003C;
+    font-size: 1em;
+    height: 2.5em;
+    margin: 0em 0em 0em 0.5em;
+    color: #E6E6E6;
+    background-color: #1B1B1B;
+    transition: background-color 0.3s ease;
+    padding: 0 0 0 0.5em;
+}
+
+header form input[type="text"]:focus {
+    background-color: #2B1B1B;
+    outline: none;
+}
+
+header form button {
+    font-size: 1em;
+    background-color: #FF003C;
+    color: #E6E6E6;
+    border: none;
+    cursor: pointer;
+    width: 5%;
+    height: 2.6em;
+    padding: 0em;
+    margin: 0em;
+    transition: background-color 0.3s ease;
+}
+
+header form button:hover {
+    background-color: #0055FF;
+}
+
+header form a i {
+    color: #FF003C;
+    text-decoration: none; 
+    margin: 0em;
+    padding: 0em 0.2em 0em 0.2em; 
+    transition: color 0.3s ease;
+}
+
+header form a i:hover {
+    color: #0055FF;
+}
+
+header nav {
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 0 0 0.5em 0;
+    background-color: #1B1B1B;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    background-color: #FF003C;
+}
+
+#hamburger {
+    display: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    width: 19%;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    display: inline-block;
+    width: 80%;
+    padding: 0.2em 0 0.2em 0;
+    margin: 0.3em 0 0.3em 0;
+    background-color: #FF003C;
+    color: #E6E6E6;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #0055FF;
+}
+
+main {
+    flex: 1;
+}
+
+/*INDEX*/
+
+.index h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.index div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.index div div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 47.5%;
+    height: 100%;
+    color: #E6E6E6;
+    border: 0.1em solid #FF003C;
+    border-radius: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding-bottom: 2em;
+    background-color: #2B1B1B;
+}
+
+.index h2 {
+    text-align: center;
+    color: #0055FF;
+}
+
+.index div div div { /*prodotti*/
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.7em; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.index div div div div { /*prodotto*/
+    display: flex;
+    height: 22em;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 0;
+}
+
+.index div div div div a { /*link prodotto*/
+    text-decoration: none;  
+    width: 100%;
+    height: 100%;
+}
+
+.index div div div div img { /*immagini prodotto*/
+    margin: 0;
+    margin-top: 0.5em;
+    padding: 0;
+    width: 80%;
+}
+
+.index div div div div:hover { /*passaggio mouse prodotto*/
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.index div div div div p { /*paragrafi prodotto*/
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.index #contOfferte {
+    display: flex;
+    flex-direction: column;
+    background-color: #2B1B1B;
+    border: 0.1em solid #FF003C;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.index #contOfferte div { /*offerte*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 0.7em; 
+    width: 100%;
+    margin: 0;
+    border: 0;
+}
+
+.index #contOfferte div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 19%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 23em;
+    border-radius: 0;
+}
+
+.index #contOfferte div div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.index #contOfferte div div a {
+    text-decoration: none;  
+    width: 100%;
+    height: 100%;
+}
+
+.index #contOfferte div div img {
+    top: 0;
+    margin: 0;
+    width: 80%;
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+.index #contOfferte div div p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+/*PRODOTTO*/
+
+.prodotto div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 25em;
+}
+
+.prodotto div div { /*immagini prodotto*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    
+    height: 100%;
+}
+
+.prodotto div div img { 
+    height: 80%;
+}
+
+.prodotto div div div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    height: 20%;
+    margin-top: 0.5em;
+}
+
+.prodotto div div div .imgSelezionata {
+    border: 0.2em solid #FF003C;
+    transform: scale(1.1);
+}
+
+.prodotto div div div img {
+    height: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.prodotto div #descrizioneProdotto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    background-color: #FF003C;
+    margin-right: 0.5em;
+    height: 100%;
+}
+
+.prodotto div #descrizioneProdotto h2 {
+    color: #E6E6E6;
+}
+
+.prodotto div #descrizioneProdotto form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prodotto div #descrizioneProdotto form input {
+    border: 0.01em solid #E6E6E6;
+    font-size: 1em;
+    height: 2.5em;
+    margin: 0em 0em 0em 0.5em;
+    color: #E6E6E6;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease;
+    padding: 0 0 0 0.5em;
+    font-weight: bold;
+    width: 3ch;
+    box-sizing: content-box;
+}
+
+.prodotto div #descrizioneProdotto form input:focus {
+    background-color: #85001f;
+    outline: none;
+}
+
+.prodotto div #descrizioneProdotto form a i {
+    cursor: pointer;
+    color: white;
+    user-select: none;
+}
+
+.prodotto div #descrizioneProdotto form a i:hover {
+    color: #0055FF;
+}
+
+.prodotto div #descrizioneProdotto button {
+    width: 50%;
+    padding: 0.2em 0 0.2em 0;
+    margin: 0.3em 0 0.3em 0;
+    background-color: #E6E6E6;
+    border-radius: 1.5em;
+    color: #FF003C;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.prodotto div #descrizioneProdotto button:hover {
+    background-color: #0055FF;
+}
+
+.prodotto h2 {
+    text-align: center;
+    color: #0055FF;
+}
+
+.prodotto p {
+    color: #E6E6E6;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.prodotto #recensioni {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    height: auto;
+}
+
+.prodotto #recensioni div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: fit-content;
+}
+
+.prodotto #prodottiSimili {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: auto;
+    width: auto;
+}
+
+.prodotto #prodottiSimili div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 15%;
+    flex-grow: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 23em;
+}
+
+.prodotto #prodottiSimili div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.prodotto #prodottiSimili div a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;  
+    width: 100%;
+    height: 100%;
+}
+
+.prodotto #prodottiSimili div img {
+    width: 80%;   
+    margin-top: 1em;
+    height: auto;
+}
+
+.prodotto #prodottiSimili div p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+/*LOGIN*/
+
+.login h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.login form input {
+    border: 0.01em solid #FF003C;
+    font-size: 1em;
+    height: 2.5em;
+    margin: 0em 0em 0em 0.5em;
+    color: #E6E6E6;
+    background-color: #1B1B1B;
+    transition: background-color 0.3s ease;
+    padding: 0 0 0 0.5em;
+    font-weight: bold;
+    width: 30ch;
+    box-sizing: content-box;
+}
+
+.login form input:focus {
+    background-color: #2B1B1B;
+    outline: none;
+}
+
+.login form button {
+    width: fit-content;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    margin: 0.3em 0 0.3em 0;
+    background-color: #FF003C;
+    border-radius: 1.5em;
+    color: #E6E6E6;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login form button:hover {
+    background-color: #0055FF;
+}
+
+/*UTENTE*/
+
+.utente h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.utente p {
+    color: #E6E6E6;
+    text-align: center;
+    margin: 0.5em;
+    font-size: 1.2em;
+}
+
+.utente #logoutForm {
+    display: flex;
+    justify-content: center;
+}
+
+.utente #logoutForm button {
+    width: fit-content;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    margin: 0.3em 0 0.3em 0;
+    background-color: #FF003C;
+    border-radius: 1.5em;
+    color: #E6E6E6;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.utente #logoutForm button:hover {
+    background-color: #0055FF;
+}
+
+.utente h2 {
+    text-align: center;
+    color: #0055FF;
+}
+
+.utente #ordini {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.utente #ordini div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 24%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 23em;
+}
+
+.utente #ordini div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.utente #ordini div a {
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.utente #ordini div img {
+    width: 60%;
+    margin: 0;
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+.utente #ordini div h2 {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.utente #ordini div p {
+    color: #E6E6E6;
+    margin: 0;
+    font-size: 1em;
+}
+
+.utente #ordini div form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.utente #ordini div form button {
+    width: 60%;
+    padding: 0.2em 0 0.2em 0;
+    margin: 0.3em 0 0.3em 0;
+    background-color: #E6E6E6;
+    border-radius: 1.5em;
+    color: #FF003C;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+.utente #ordini div button:hover {
+    background-color: #0055FF;
+}
+
+/*CARRELLO*/
+
+.carrello div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carrello div h1 {
+    margin-left: 0.5em;
+
+    
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.carrello div div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1; /*riempie lo spazio rimanente*/
+}
+
+.carrello div div h2 {
+    text-align: center;
+    color: #0055FF;
+}
+
+.carrello div div form {
+    display: flex;
+}
+
+.carrello div div form button {
+    width: fit-content;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    margin: 0.5em;
+    background-color: #FF003C;
+    border-radius: 1.5em;
+    color: #E6E6E6;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrello div div form button:hover {
+    background-color: #0055FF;
+}
+
+.carrello #prodotti {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;  
+    gap: 1em;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.carrello #prodotti div {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    background-color: #FF003C;
+    
+}
+
+.carrello #prodotti div h2 {
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.carrello #prodotti div p {
+    color: #E6E6E6;
+    text-align: center;
+    margin: 0;
+}
+
+.carrello #prodotti div div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.carrello #prodotti div a {
+    width: 100%;
+    text-decoration: none;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carrello #prodotti div a:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.carrello #prodotti div a img {
+    width: 80%;
+    margin: 0;
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+.carrello #prodotti div div form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrello #prodotti div div form button {
+    background-color: #E6E6E6;
+    border-radius: 1.5em;
+    color: #FF003C;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrello #prodotti div div form button:hover {
+    background-color: #0055FF;
+}
+
+.carrello #prodotti p {
+    text-align: center;
+    color: #E6E6E6;
+}
+
+/*ACQUISTO*/
+
+.acquisto h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.acquisto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.acquisto form input {
+    border: 0.01em solid #FF003C;
+    font-size: 1em;
+    height: 2.5em;
+    margin: 0em 0em 0em 0.5em;
+    color: #E6E6E6;
+    background-color: #1B1B1B;
+    transition: background-color 0.3s ease;
+    padding: 0 0 0 0.5em;
+    font-weight: bold;
+    width: 30ch;
+    box-sizing: content-box;
+}
+
+.acquisto form input:focus {
+    background-color: #2B1B1B;
+    outline: none;
+}
+
+.acquisto form button {
+    width: 20%;
+    padding: 0.2em 0 0.2em 0;
+    margin: 0.3em 0 0.3em 0;
+    background-color: #FF003C;
+    border-radius: 1.5em;
+    color: #E6E6E6;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.acquisto form button:hover {
+    background-color: #0055FF;
+}
+
+.recensisci h1 {
+    text-align: center;
+    color: #FF003C;
+}
+
+.recensisci form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.recensisci form input {
+    border: 0.01em solid #FF003C;
+    font-size: 1em;
+    height: 2.5em;
+    margin: 0em 0em 0em 0.5em;
+    color: #E6E6E6;
+    background-color: #1B1B1B;
+    transition: background-color 0.3s ease;
+    padding: 0 0 0 0.5em;
+    font-weight: bold;
+    width: 7ch;
+    box-sizing: content-box;
+}
+
+.recensisci form input:focus {
+    background-color: #2B1B1B;
+    outline: none;
+}
+
+.recensisci form textarea {
+    border: 0.01em solid #FF003C;
+    font-size: 1em;
+    margin: 0em 0em 0em 0.5em;
+    color: #E6E6E6;
+    background-color: #1B1B1B;
+    transition: background-color 0.3s ease;
+    padding: 0 0 0 0.5em;
+    font-weight: bold;
+    width: 50ch;
+    height: 10em;
+    box-sizing: content-box;
+}
+
+.recensisci form textarea:focus {
+    background-color: #2B1B1B;
+    outline: none;
+}
+
+.recensisci form button {
+    width: 20%;
+    padding: 0.2em 0 0.2em 0;
+    margin: 0.3em 0 0.3em 0;
+    background-color: #FF003C;
+    border-radius: 1.5em;
+    color: #E6E6E6;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.recensisci form button:hover {
+    background-color: #0055FF;
+}
+
+/*RICERCA*/
+
+.ricerca h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 2.5em;
+    color: #FF003C;
+}
+
+.ricerca div {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.ricerca div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 23em;
+}
+
+.ricerca div div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.ricerca div div a {
+    text-decoration: none; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ricerca div div a img {
+    width: 70%;
+    margin: 0;
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+.ricerca div div a p { 
+    color: #E6E6E6;
+    margin: 0;
+}
+
+footer {
+    background-color: #FF003C;
+    color: #E6E6E6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 1em 0 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/*CPU*/
+
+.cpu i {
+    color: #FF003C;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+}
+
+.cpu #indietro {
+    top: 50%;
+    left: 1%;
+}
+
+.cpu #avanti {
+    top: 50%;
+    right: 1%;
+}
+
+.cpu i:hover {
+    color: #0055FF;
+    transform: scale(1.1);
+}
+
+.cpu div {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.cpu div img {
+    width: 90%;
+    height: max-content;
+}
+
+.cpu h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.cpu ul {
+    list-style-type: none;
+    padding-left: 0;
+    border: 0.1em solid #FF003C;
+    border-radius: 1em;
+    width: 50%;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-self: center;
+    background-color: #2B1B1B;
+}
+
+.cpu ul li {
+    color: #E6E6E6;
+    text-align: center;
+}
+
+.cpu ul li span {
+    color: #0055FF;
+    font-weight: bold;
+}
+
+.cpu #proposte { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: auto;
+    overflow: visible;
+}
+
+.cpu #proposte div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    overflow: visible;
+    height: auto;
+}
+
+.cpu h2 {
+    text-align: center;
+    color: #0055FF;
+}
+
+.cpu p {
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.cpu #proposte div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 22em;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cpu #proposte div div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.cpu #proposte div div a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cpu #proposte div div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.cpu #proposte div div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.cpu #sconto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.cpu #sconto div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.cpu #sconto div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.cpu #sconto div a {
+    text-decoration: none; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cpu #sconto div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.cpu #sconto div p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.cpu #cpu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.cpu #cpu div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.cpu #cpu div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.cpu #cpu div img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.cpu #cpu div a {
+    text-decoration: none;  
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cpu #cpu div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+/*GPU*/
+
+.gpu i {
+    color: #FF003C;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+}
+
+.gpu #indietro {
+    top: 50%;
+    left: 1%;
+}
+
+.gpu #avanti {
+    top: 50%;
+    right: 1%;
+}
+
+.gpu i:hover {
+    color: #0055FF;
+    transform: scale(1.1);
+}
+
+.gpu div {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.gpu div img {
+    width: 90%;
+    height: max-content;
+}
+
+.gpu h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.gpu ul {
+    list-style-type: none;
+    padding-left: 0;
+    border: 0.1em solid #FF003C;
+    border-radius: 1em;
+    width: 50%;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-self: center;
+    background-color: #2B1B1B;
+}
+
+.gpu ul li {
+    color: #E6E6E6;
+    text-align: center;
+}
+
+.gpu ul li span {
+    color: #0055FF;
+    font-weight: bold;
+}
+
+.gpu #proposte { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: auto;
+    overflow: visible;
+}
+
+.gpu #proposte div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    overflow: visible;
+    height: auto;
+}
+
+.gpu h2 {
+    text-align: center;
+    color: #0055FF;
+}
+
+.gpu p {
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.gpu #proposte div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 22em;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.gpu #proposte div div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.gpu #proposte div div a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gpu #proposte div div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.gpu #proposte div div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.gpu #sconto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.gpu #sconto div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.gpu #sconto div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.gpu #sconto div a {
+    text-decoration: none; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gpu #sconto div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.gpu #sconto div p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.gpu #gpu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.gpu #gpu div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.gpu #gpu div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.gpu #gpu div img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.gpu #gpu div a {
+    text-decoration: none;  
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gpu #gpu div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+/*RAM*/
+
+.ram i {
+    color: #FF003C;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+}
+
+.ram #indietro {
+    top: 50%;
+    left: 1%;
+}
+
+.ram #avanti {
+    top: 50%;
+    right: 1%;
+}
+
+.ram i:hover {
+    color: #0055FF;
+    transform: scale(1.1);
+}
+
+.ram div {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.ram div img {
+    width: 90%;
+    height: max-content;
+}
+
+.ram h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.ram ul {
+    list-style-type: none;
+    padding-left: 0;
+    border: 0.1em solid #FF003C;
+    border-radius: 1em;
+    width: 50%;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-self: center;
+    background-color: #2B1B1B;
+}
+
+.ram ul li {
+    color: #E6E6E6;
+    text-align: center;
+}
+
+.ram ul li span {
+    color: #0055FF;
+    font-weight: bold;
+}
+
+.ram #proposte { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: auto;
+    overflow: visible;
+}
+
+.ram #proposte div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    overflow: visible;
+    height: auto;
+}
+
+.ram h2 {
+    text-align: center;
+    color: #0055FF;
+}
+
+.ram p {
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.ram #proposte div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 22em;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ram #proposte div div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.ram #proposte div div a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ram #proposte div div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.ram #proposte div div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.ram #sconto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.ram #sconto div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.ram #sconto div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.ram #sconto div a {
+    text-decoration: none; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ram #sconto div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.ram #sconto div p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.ram #ram {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.ram #ram div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.ram #ram div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.ram #ram div img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.ram #ram div a {
+    text-decoration: none;  
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ram #ram div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+/*CASE*/
+
+.case i {
+    color: #FF003C;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+}
+
+.case #indietro {
+    top: 50%;
+    left: 1%;
+}
+
+.case #avanti {
+    top: 50%;
+    right: 1%;
+}
+
+.case i:hover {
+    color: #0055FF;
+    transform: scale(1.1);
+}
+
+.case div {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.case div img {
+    width: 90%;
+    height: max-content;
+}
+
+.case h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.case ul {
+    list-style-type: none;
+    padding-left: 0;
+    border: 0.1em solid #FF003C;
+    border-radius: 1em;
+    width: 50%;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-self: center;
+    background-color: #2B1B1B;
+}
+
+.case ul li {
+    color: #E6E6E6;
+    text-align: center;
+}
+
+.case ul li span {
+    color: #0055FF;
+    font-weight: bold;
+}
+
+.case #proposte { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: auto;
+    overflow: visible;
+}
+
+.case #proposte div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    overflow: visible;
+    height: auto;
+}
+
+.case h2 {
+    text-align: center;
+    color: #0055FF;
+}
+
+.case p {
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.case #proposte div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 22em;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.case #proposte div div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.case #proposte div div a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.case #proposte div div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.case #proposte div div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.case #sconto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.case #sconto div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.case #sconto div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.case #sconto div a {
+    text-decoration: none; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.case #sconto div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.case #sconto div p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.case #case {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.case #case div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.case #case div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.case #case div img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.case #case div a {
+    text-decoration: none;  
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.case #case div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+/*MOTHERBOARD*/
+
+.motherboard i {
+    color: #FF003C;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+}
+
+.motherboard #indietro {
+    top: 50%;
+    left: 1%;
+}
+
+.motherboard #avanti {
+    top: 50%;
+    right: 1%;
+}
+
+.motherboard i:hover {
+    color: #0055FF;
+    transform: scale(1.1);
+}
+
+.motherboard div {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.motherboard div img {
+    width: 90%;
+    height: max-content;
+}
+
+.motherboard h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.motherboard ul {
+    list-style-type: none;
+    padding-left: 0;
+    border: 0.1em solid #FF003C;
+    border-radius: 1em;
+    width: 50%;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-self: center;
+    background-color: #2B1B1B;
+}
+
+.motherboard ul li {
+    color: #E6E6E6;
+    text-align: center;
+}
+
+.motherboard ul li span {
+    color: #0055FF;
+    font-weight: bold;
+}
+
+.motherboard #proposte { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: auto;
+    overflow: visible;
+}
+
+.motherboard #proposte div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    overflow: visible;
+    height: auto;
+}
+
+.motherboard h2 {
+    text-align: center;
+    color: #0055FF;
+}
+
+.motherboard p {
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.motherboard #proposte div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 22em;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.motherboard #proposte div div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.motherboard #proposte div div a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.motherboard #proposte div div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.motherboard #proposte div div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.motherboard #sconto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.motherboard #sconto div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.motherboard #sconto div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.motherboard #sconto div a {
+    text-decoration: none; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.motherboard #sconto div a img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.motherboard #sconto div p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+.motherboard #motherboard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    height: auto;
+    overflow: visible;
+}
+
+.motherboard #motherboard div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    background-color: #FF003C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 22em;
+}
+
+.motherboard #motherboard div:hover {
+    background-color: #0055FF;
+    transform: scale(1.1);
+}
+
+.motherboard #motherboard div img {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.motherboard #motherboard div a {
+    text-decoration: none;  
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.motherboard #motherboard div a p {
+    color: #E6E6E6;
+    margin: 0;
+}
+
+/*MAPS*/
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maps h1 {  
+    text-align: center;
+    font-size: 3em;
+    color: #FF003C;
+}
+
+.maps iframe {
+    width: 90%;
+    height: 50vh;
+    margin-bottom: 2em;
+}
+
+/*FOOTER*/
+
+footer p {
+    margin: 0;
+}
+
+footer #maps {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header form button {  
+        width: 10%;
+    }
+
+    header form input:focus ~ button {
+        width: 20%;
+        margin-right: 0.5em;
+    }
+
+    header form input:focus ~ .icone {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li a {
+        font-size: 1.5em;
+        margin: 0.1em;
+    }
+
+    #hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.1em;
+        width: 100%;
+        font-size: 2em;
+        cursor: pointer;
+        background-color: #FF003C;
+        text-decoration: none;
+        color: #E6E6E6;
+    }
+    
+    #hamburger p {
+         font-size: 1em;
+         margin: 0.2em;
+         font-weight: bold;
+    }
+
+    .index div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index div div {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    .index div div div div {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .index #contOfferte div div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .utente #ordini {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .utente #ordini div {
+        width: 90%;
+    }
+
+    .carrello div {
+        flex-direction: column;   
+    }
+
+    .carrello #prodotti {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrello #prodotti div {
+        width: 80%;
+    }
+
+    .prodotto div {
+        margin-top: 0.5em;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .prodotto div div {
+        height: 25em;
+        width: 100%;
+    }
+
+    .prodotto div div img {
+        width: 80%;
+    }
+
+    .prodotto div div div {
+        width: 70%;
+    }
+
+    .prodotto div div div img {
+        width: 20%;
+        height: 80%;
+    }
+
+    .prodotto #recensioni div {
+        width: 40%;
+    }
+
+    .prodotto div #descrizioneProdotto {
+        margin: 0.5em;
+        width: 90%;
+    }
+
+    .prodotto #prodottiSimili div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .cpu div {
+        height: 15em;
+    }
+
+    .cpu div img {
+        width: 98%;  
+    }
+
+    .cpu #indietro {
+        top: 50%;
+        left: 10%;
+    }
+
+    .cpu #avanti {
+        top: 50%;
+        right: 10%;
+    }
+
+    .cpu ul {
+        width: 85%;
+    }
+
+    .cpu #proposte {
+        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cpu #proposte div {
+        width: 100%;   
+    }
+
+    .cpu #proposte div div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .cpu #sconto {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cpu #sconto div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .cpu #cpu {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .cpu #cpu div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    /*GPU*/
+
+    .gpu div {
+        height: 15em;
+    }
+
+    .gpu div img {
+        width: 98%;  
+    }
+
+    .gpu #indietro {
+        top: 50%;
+        left: 5%;
+    }
+
+    .gpu #avanti {
+        top: 50%;
+        right: 5%;
+    }
+
+    .gpu ul {
+        width: 85%;
+    }
+
+    .gpu #proposte {
+        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .gpu #proposte div {
+        width: 100%;   
+    }
+
+    .gpu #proposte div div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .gpu #sconto {
+        margin: 0;
+        padding: 0;
+    }
+
+    .gpu #sconto div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .gpu #gpu {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .gpu #gpu div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    /*RAM*/
+
+    .ram div {
+        height: 15em;
+    }
+
+    .ram div img {
+        width: 98%;  
+    }
+
+    .ram #indietro {
+        top: 50%;
+        left: 10%;
+    }
+
+    .ram #avanti {
+        top: 50%;
+        right: 10%;
+    }
+
+    .ram #proposte {
+        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .ram ul {
+        width: 85%;
+    }
+
+    .ram #proposte div {
+        width: 100%;   
+    }
+
+    .ram #proposte div div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .ram #sconto {
+        margin: 0;
+        padding: 0;
+    }
+
+    .ram #sconto div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .ram #ram {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .ram #ram div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    /*CASE*/
+
+    .case div {
+        height: 15em;
+    }
+
+    .case div img {
+        width: 98%;  
+    }
+
+    .case #indietro {
+        top: 50%;
+        left: 10%;
+    }
+
+    .case #avanti {
+        top: 50%;
+        right: 10%;
+    }
+
+    .case ul {
+        width: 85%;
+    }
+
+    .case #proposte {
+        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .case #proposte div {
+        width: 100%;   
+    }
+
+    .case #proposte div div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .case #sconto {
+        margin: 0;
+        padding: 0;
+    }
+
+    .case #sconto div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .case #case {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .case #case div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    /*MOTHERBOARD*/
+
+    .motherboard div {
+        height: 15em;
+    }
+
+    .motherboard div img {
+        width: 98%;  
+    }
+
+    .motherboard #indietro {
+        top: 50%;
+        left: 5%;
+    }
+
+    .motherboard #avanti {
+        top: 50%;
+        right: 5%;
+    }
+
+    .motherboard ul {
+        width: 85%;
+    }
+
+    .motherboard #proposte {
+        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .motherboard #proposte div {
+        width: 100%;   
+    }
+
+    .motherboard #proposte div div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .motherboard #sconto {
+        margin: 0;
+        padding: 0;
+    }
+
+    .motherboard #sconto div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .motherboard #motherboard {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .motherboard #motherboard div {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .ricerca div {
+        margin-bottom: 0.5em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ricerca div div {
+        width: 90%;
+    }
+
+    .recensisci form textarea {
+        width: 90%;
+    }
+}

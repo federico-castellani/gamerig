@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it-IT"> 
+    <head>
+        <title>GameRig: Dove siamo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sito di vendita di componenti per PC da Gaming">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <header class="header">     
+            <form method="GET" action="ricerca.php">
+                <a href="index.php"><h1>GameRig</h1></a>
+                <input type="text" name="ricerca" placeholder="Cerca" id="cerca" class="ricercaBarraLunga">
+                <button type="submit"><i class="material-icons" style="font-size:2.3em;">search</i></button>
+                <a href="utente.php" class="icone"><i class="material-icons" style="font-size:2.3em;">person</i></a>
+                <a href="carrello.php" class="icone"><i class="material-icons" style="font-size:2.3em;">shopping_cart</i></a>
+            </form>
+            <a href="javascript:void(0);" id="hamburger">
+                <i class="material-icons" style="font-size:1.5em;" id="icona-hamburger">menu</i>
+                <p>Menu</p>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="cpu.php">CPU</a></li>
+                    <li><a href="gpu.php">SCHEDE VIDEO</a></li>
+                    <li><a href="ram.php">RAM</a></li>
+                    <li><a href="motherboard.php">SCHEDE MADRI</a></li>
+                    <li><a href="case.php">CASE</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="maps">
+            <h1>Dove siamo</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1156.0987420782849!2d77.48535156505244!3d12.93102694283762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f11bad62b63%3A0xd8edaf1ea6fce7b3!2sGame%20Rig%20Builder!5e0!3m2!1sit!2sit!4v1736507172367!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
+        <footer>
+            <p>Advertise</p>
+            <p>Cookie Policy</p>
+            <p>Terms of service</p>
+            <p onclick="location.href='maps.html'" id="maps">Dove siamo</p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+    </body>
+</html>
